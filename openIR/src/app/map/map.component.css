@@ -1,0 +1,68 @@
+.map{
+    position: absolute;
+    background-color: white;
+    width: 55%;
+    height: 90%;
+    padding: 2%;
+    margin: 9%;
+    border-radius: 50px;
+    border: 0px solid #8c8c8c;
+    box-shadow: 0px 2px 7px #5c5c5c;
+    top: -18%;
+    left: 8%;
+}
+
+.datamaps-legend {
+    padding-bottom: 20px;
+    z-index: 1001;
+    position: absolute;
+    left: 12%;
+    top: 4%;
+    font-size: 1em;
+    font-family: 'Open Sans';
+    font-weight: 800;
+    background-color: #1366ff;
+    color: white;
+    padding: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
+    border-radius: 51px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+button{
+    display: inline-block;
+    margin-left: 3%;
+    padding: 1%;
+    font-size: 1em;
+    background-color: #e2e2e2;
+    border: none;
+    padding: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-radius: 45px;
+    cursor: pointer;
+    box-shadow: 0px 2px 6px #636161;
+}
+
+.cross{
+    background-color: #857777;
+    padding: 6px;
+    border-radius: 57%;
+    padding-left: 12px;
+    padding-right: 11px;
+    color: white;
+    width: fit-content;
+    font-family: 'Open Sans';
+    font-weight: 800;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.map_container{
+    width: 93%;
+    height: 100%;
+    position: absolute;
+    top: 8%;
+}

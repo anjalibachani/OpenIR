@@ -1,0 +1,42 @@
+<div class = "loader" *ngIf="show_loader">
+    <img class="loader_img" src = "../../assets/loading.gif">
+</div>
+
+<div class = "close" (click)="closeGraph()">
+    X
+</div>
+
+<div class="dropdown">
+    <button class="dropbtn">POI Names</button>
+    <div class="dropdown-content">
+        <div (click)="selectPOI('AOC','usa','Alexandra Cortez')" class = "btn">Alexandra Cortez</div>
+        <div (click)="selectPOI('ArvindKejriwal','india','Arvind Kejriwal')" class = "btn">Arvind Kejriwal</div>
+        <div (click)="selectPOI('GiuseppeConteIT','italy','Giuseppe Conte')" class = "btn">Giuseppe Conte</div>
+        <div (click)="selectPOI('MinisteroSalute','italy','Ministero della Salute')" class = "btn">Ministero della Salute</div>
+        <div (click)="selectPOI('MoHFW_INDIA','india','Ministry of Health')" class = "btn">Ministry of Health</div>
+        <div (click)="selectPOI('NIH','usa','National Institutes of Health')" class = "btn">National Institutes of Health</div>
+        <div (click)="selectPOI('PMOIndia','india')" class = "btn">PMO India</div>
+        <div (click)="selectPOI('POTUS','usa')" class = "btn">President Trump</div>
+        <div (click)="selectPOI('PaolaTavernaM5S','italy')" class = "btn">Paola Taverna</div>
+        <div (click)="selectPOI('RahulGandhi','india')" class = "btn">Rahul Gandhi</div>
+        <div (click)="selectPOI('SecAzar','usa')" class = "btn">Secretary Alex Azar</div>
+        <div (click)="selectPOI('SenSanders','usa')" class = "btn">Bernie Sanders</div>
+        <div (click)="selectPOI('SitaramYechury','india')" class = "btn">Sitaram Yechury </div>
+        <div (click)="selectPOI('luigidimaio','italy')" class = "btn">Luigi Di Maio</div>
+        <div (click)="selectPOI('narendramodi','india')" class = "btn">Narendra Modi</div>
+        <div (click)="selectPOI('robersperanza','italy')" class = "btn">Roberto Speranza</div>
+        <div (click)="selectPOI('trvrb','usa')" class = "btn">Trevor Bedford</div>
+    </div>
+</div>
+
+<div class = "country"> COVID curve for {{this.country}} as per '{{this.poi_name}}' tweets</div>
+<div class = "inline graph" style="display: block" style="width:40%;">
+    <canvas baseChart
+        chartType="bar"
+        [datasets]="chart.datasets"
+        [labels]="chart.labels"
+        [options]="chart.options"
+        legend="true">
+    </canvas>
+</div>
+<div class = "country_covid inline"><img src="../../assets/{{country_img}}.PNG"/></div>
